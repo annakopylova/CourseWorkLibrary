@@ -1,0 +1,25 @@
+﻿<Window x:Class="Library.Views.EditBookScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Library.Views"
+        mc:Ignorable="d"
+        Title="Редактирование книги" Height="360" Width="800">
+    <StackPanel>
+        <Label Content="Название"/>
+        <TextBox Height="25" Name="title"/>
+        <Label Content="Автор"/>
+        <TextBox Height="25" Name="author"/>
+        <Label Content="Дата публикации"/>
+        <TextBox Height="25" Name="publicationDate"/>
+        <Label Content="Жанр"/>
+        <TextBox Height="25" Name="genre"/>
+        <Label Content="На руках"/>
+        <ComboBox DisplayMemberPath="FIO" Name="userList" SelectionChanged="UserList_SelectionChanged"/>
+        <Grid>
+            <Button Margin="0,25,395,0" Height="50" Width="400" Content="Сохранить" x:Name="saveBook" Click="SaveBook_Click"/>
+            <Button Margin="395,25,0,0" Height="50" Width="400" Content="Удалить" Name="deleteBtn" Click="DeleteBtn_Click"/>
+        </Grid>
+    </StackPanel>
+</Window>

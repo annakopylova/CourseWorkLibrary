@@ -1,0 +1,49 @@
+﻿<Window x:Class="Library.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Library"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="458" Width="800">
+    <Grid>
+        <Grid Margin="0,0,0,320">
+            <Label Content="Фамилия Имя Очество" Name="FIO" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+            <Button Name="adminBtn" Content="Админ панель" Margin="672,10,10,71" Click="AdminBtn_Click" RenderTransformOrigin="0.309,0.481"/>
+            <Grid Name="studentGrid" Visibility="Visible">
+                <StackPanel Margin="10,36,569,0">
+                    <Label Content="Группа: " Name="group"/>
+                    <Label Content="Курс: " Name="course"/>
+                </StackPanel>
+                <StackPanel Margin="228,36,299,0">
+                    <Label Content="Факультет: " Name="faculty"/>
+                    <Label Content="Номер зачётной книжки: " Name="registrationPacket"/>
+                </StackPanel>
+                <StackPanel Margin="498,36,0,0">
+                    <Label Content="Номер читательского билета: " Name="libraryCardId"/>
+                    <Label Content="Читательский билет истекает: " Name="dateIssue"/>
+                </StackPanel>
+            </Grid>
+            <Grid Name="employerGrid" Visibility="Hidden">
+                <StackPanel Margin="10,36,0,0">
+                    <Label Content="Номер удостоверения: " Name="badgeNumber"/>
+                    <Label Content="Должность: " Name="post"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+        <StackPanel Margin="0,105,0,0">
+            <Button Content="Добавить книгу" Width="800" Height="25" Click="AddBook_Click" Name="btnAddBook"/>
+            <ListView BorderBrush="Gainsboro" BorderThickness="1" Name="listBooks" MouseDoubleClick="ListBook_MouseDoubleClick">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Width="190" DisplayMemberBinding="{Binding Path=Title}">Название</GridViewColumn>
+                        <GridViewColumn Width="190" DisplayMemberBinding="{Binding Path=Author}">Автор</GridViewColumn>
+                        <GridViewColumn Width="103" DisplayMemberBinding="{Binding Path=PublicationDate}">Дата публикации</GridViewColumn>
+                        <GridViewColumn Width="100" DisplayMemberBinding="{Binding Path=Genre}">Жанр</GridViewColumn>
+                        <GridViewColumn Width="190" DisplayMemberBinding="{Binding Path=LibraryCard.Student.FIO}">На руках</GridViewColumn>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </StackPanel>
+    </Grid>
+</Window>

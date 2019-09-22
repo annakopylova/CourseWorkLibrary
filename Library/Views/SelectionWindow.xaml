@@ -1,0 +1,22 @@
+﻿<Window x:Class="Library.Views.SelectionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Library.Views"
+        mc:Ignorable="d"
+        Title="Login" Height="550" Width="500" FontSize="14"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent">
+    <Grid>
+        <Button Name="CloseBtn" HorizontalAlignment="Right" 
+                    Style="{StaticResource CloseButton}" Click="CloseBtn_Click" Margin="0,25,40,470"/>
+        <Border Background="#2e3137" CornerRadius="20" Margin="20">
+            <StackPanel>
+                <Button Background="Transparent" Content="Я студент" Height="150" Width="300" Margin="80,80,80,50" Foreground="White" FontSize="33" Click="StudentBtn_Click"/>
+                <Button Background="Transparent" Content="Я работник" Height="150" Width="300" Foreground="White" FontSize="33"  Click="EmployeeBtn_Click"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

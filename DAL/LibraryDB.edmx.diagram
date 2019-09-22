@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="63d9d0022246401987cd1cfd2d738b43" Name="Diagram1" >
+        <EntityTypeShape EntityType="LibraryDB.User" Width="1.875" PointX="3.75" PointY="0.625" />
+        <EntityTypeShape EntityType="LibraryDB.Student" Width="2" PointX="1.75" PointY="4" />
+        <EntityTypeShape EntityType="LibraryDB.Employee" Width="1.5" PointX="7.875" PointY="0.625" />
+        <InheritanceConnector EntityType="LibraryDB.Employee" />
+        <InheritanceConnector EntityType="LibraryDB.Student" />
+        <EntityTypeShape EntityType="LibraryDB.Book" Width="1.75" PointX="8.625" PointY="3.875" />
+        <EntityTypeShape EntityType="LibraryDB.LibraryCard" Width="1.5" PointX="4.875" PointY="4" />
+        <AssociationConnector Association="LibraryDB.StudentLibraryCard" />
+        <AssociationConnector Association="LibraryDB.LibraryCardBook" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

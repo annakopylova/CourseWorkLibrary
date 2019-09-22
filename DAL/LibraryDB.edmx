@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="LibraryDB.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="LibraryDBStoreContainer">
+    <EntitySet Name="UserSet" EntityType="LibraryDB.Store.UserSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BookSet" EntityType="LibraryDB.Store.BookSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="LibraryCardSet" EntityType="LibraryDB.Store.LibraryCardSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserSet_Student" EntityType="LibraryDB.Store.UserSet_Student" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserSet_Employee" EntityType="LibraryDB.Store.UserSet_Employee" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="StudentLibraryCard" Association="LibraryDB.Store.StudentLibraryCard">
+      <End Role="Student" EntitySet="UserSet_Student" />
+      <End Role="LibraryCard" EntitySet="LibraryCardSet" />
+    </AssociationSet>
+    <AssociationSet Name="LibraryCardBook" Association="LibraryDB.Store.LibraryCardBook">
+      <End Role="LibraryCard" EntitySet="LibraryCardSet" />
+      <End Role="Book" EntitySet="BookSet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Student_inherits_User" Association="LibraryDB.Store.FK_Student_inherits_User">
+      <End Role="User" EntitySet="UserSet" />
+      <End Role="Student" EntitySet="UserSet_Student" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employee_inherits_User" Association="LibraryDB.Store.FK_Employee_inherits_User">
+      <End Role="User" EntitySet="UserSet" />
+      <End Role="Employee" EntitySet="UserSet_Employee" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="UserSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Login" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Password" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="FIO" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Admin" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BookSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Author" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PublicationDate" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Genre" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LibraryCard_Id" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="LibraryCardSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DateIssue" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserSet_Student">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Group" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Course" Type="int" Nullable="false" />
+    <Property Name="Faculty" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="RegistrationPacket" Type="int" Nullable="false" />
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="LibraryCard_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserSet_Employee">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="BadgeNumber" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Post" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="StudentLibraryCard">
+    <End Role="Student" Type="LibraryDB.Store.UserSet_Student" Multiplicity="*" />
+    <End Role="LibraryCard" Type="LibraryDB.Store.LibraryCardSet" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="LibraryCard">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Student">
+        <PropertyRef Name="LibraryCard_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="LibraryCardBook">
+    <End Role="LibraryCard" Type="LibraryDB.Store.LibraryCardSet" Multiplicity="0..1" />
+    <End Role="Book" Type="LibraryDB.Store.BookSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LibraryCard">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Book">
+        <PropertyRef Name="LibraryCard_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Student_inherits_User">
+    <End Role="User" Type="LibraryDB.Store.UserSet" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Student" Type="LibraryDB.Store.UserSet_Student" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Student">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employee_inherits_User">
+    <End Role="User" Type="LibraryDB.Store.UserSet" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Employee" Type="LibraryDB.Store.UserSet_Employee" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Employee">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="LibraryDB" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="LibraryDBContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="UserSet" EntityType="LibraryDB.User" />
+          <EntitySet Name="BookSet" EntityType="LibraryDB.Book" />
+          <EntitySet Name="LibraryCardSet" EntityType="LibraryDB.LibraryCard" />
+          <AssociationSet Name="StudentLibraryCard" Association="LibraryDB.StudentLibraryCard">
+            <End Role="Student" EntitySet="UserSet" />
+            <End Role="LibraryCard" EntitySet="LibraryCardSet" />
+          </AssociationSet>
+          <AssociationSet Name="LibraryCardBook" Association="LibraryDB.LibraryCardBook">
+            <End Role="LibraryCard" EntitySet="LibraryCardSet" />
+            <End Role="Book" EntitySet="BookSet" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Login" Type="String" Nullable="false" />
+          <Property Name="Password" Type="String" Nullable="false" />
+          <Property Name="FIO" Type="String" Nullable="false" />
+          <Property Name="Admin" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Student" BaseType="LibraryDB.User">
+          <Property Name="Group" Type="String" Nullable="false" />
+          <Property Name="Course" Type="Int32" Nullable="false" />
+          <Property Name="Faculty" Type="String" Nullable="false" />
+          <Property Name="RegistrationPacket" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="LibraryCard" Relationship="LibraryDB.StudentLibraryCard" FromRole="Student" ToRole="LibraryCard" />
+        </EntityType>
+        <EntityType Name="Employee" BaseType="LibraryDB.User" >
+          <Property Name="BadgeNumber" Type="String" Nullable="false" />
+          <Property Name="Post" Type="String" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Book">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" />
+          <Property Name="Author" Type="String" Nullable="false" />
+          <Property Name="PublicationDate" Type="String" Nullable="false" />
+          <Property Name="Genre" Type="String" Nullable="false" />
+          <NavigationProperty Name="LibraryCard" Relationship="LibraryDB.LibraryCardBook" FromRole="Book" ToRole="LibraryCard" />
+        </EntityType>
+        <EntityType Name="LibraryCard">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DateIssue" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="Student" Relationship="LibraryDB.StudentLibraryCard" FromRole="LibraryCard" ToRole="Student" />
+          <NavigationProperty Name="Book" Relationship="LibraryDB.LibraryCardBook" FromRole="LibraryCard" ToRole="Book" />
+        </EntityType>
+        <Association Name="StudentLibraryCard">
+          <End Type="LibraryDB.Student" Role="Student" Multiplicity="1" />
+          <End Type="LibraryDB.LibraryCard" Role="LibraryCard" Multiplicity="1" />
+        </Association>
+        <Association Name="LibraryCardBook">
+          <End Type="LibraryDB.LibraryCard" Role="LibraryCard" Multiplicity="0..1" />
+          <End Type="LibraryDB.Book" Role="Book" Multiplicity="*" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LibraryDBStoreContainer" CdmEntityContainer="LibraryDBContainer">
+    <EntitySetMapping Name="UserSet">
+      <EntityTypeMapping TypeName="IsTypeOf(LibraryDB.User)">
+        <MappingFragment StoreEntitySet="UserSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="FIO" ColumnName="FIO" />
+          <ScalarProperty Name="Admin" ColumnName="Admin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(LibraryDB.Student)">
+        <MappingFragment StoreEntitySet="UserSet_Student">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Group" ColumnName="Group" />
+          <ScalarProperty Name="Course" ColumnName="Course" />
+          <ScalarProperty Name="Faculty" ColumnName="Faculty" />
+          <ScalarProperty Name="RegistrationPacket" ColumnName="RegistrationPacket" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(LibraryDB.Employee)">
+        <MappingFragment StoreEntitySet="UserSet_Employee">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="BadgeNumber" ColumnName="BadgeNumber" />
+          <ScalarProperty Name="Post" ColumnName="Post" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BookSet">
+      <EntityTypeMapping TypeName="IsTypeOf(LibraryDB.Book)">
+        <MappingFragment StoreEntitySet="BookSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Author" ColumnName="Author" />
+          <ScalarProperty Name="PublicationDate" ColumnName="PublicationDate" />
+          <ScalarProperty Name="Genre" ColumnName="Genre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LibraryCardSet">
+      <EntityTypeMapping TypeName="IsTypeOf(LibraryDB.LibraryCard)">
+        <MappingFragment StoreEntitySet="LibraryCardSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="DateIssue" ColumnName="DateIssue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="StudentLibraryCard" TypeName="LibraryDB.StudentLibraryCard" StoreEntitySet="UserSet_Student">
+      <EndProperty Name="LibraryCard">
+        <ScalarProperty Name="Id" ColumnName="LibraryCard_Id" />
+      </EndProperty>
+      <EndProperty Name="Student">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="LibraryCardBook" TypeName="LibraryDB.LibraryCardBook" StoreEntitySet="BookSet">
+      <EndProperty Name="LibraryCard">
+        <ScalarProperty Name="Id" ColumnName="LibraryCard_Id" />
+      </EndProperty>
+      <EndProperty Name="Book">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition ColumnName="LibraryCard_Id" IsNull="false" />
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
