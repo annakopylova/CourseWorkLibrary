@@ -1,0 +1,27 @@
+D:\Конструирование ПО\Lib\DAL\bin\Debug\DAL.dll.config
+D:\Конструирование ПО\Lib\DAL\bin\Debug\DAL.dll
+D:\Конструирование ПО\Lib\DAL\bin\Debug\DAL.pdb
+D:\Конструирование ПО\Lib\DAL\bin\Debug\EntityFramework.dll
+D:\Конструирование ПО\Lib\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Конструирование ПО\Lib\DAL\bin\Debug\EntityFramework.xml
+D:\Конструирование ПО\Lib\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Конструирование ПО\Lib\DAL\bin\Debug\ru\EntityFramework.resources.dll
+D:\Конструирование ПО\Lib\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\Конструирование ПО\Lib\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\Конструирование ПО\Lib\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\Конструирование ПО\Lib\DAL\obj\Debug\DAL.dll
+D:\Конструирование ПО\Lib\DAL\obj\Debug\DAL.pdb
+C:\Users\annak\Desktop\course\DAL\bin\Debug\DAL.dll.config
+C:\Users\annak\Desktop\course\DAL\bin\Debug\DAL.dll
+C:\Users\annak\Desktop\course\DAL\bin\Debug\DAL.pdb
+C:\Users\annak\Desktop\course\DAL\bin\Debug\EntityFramework.dll
+C:\Users\annak\Desktop\course\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\annak\Desktop\course\DAL\bin\Debug\EntityFramework.xml
+C:\Users\annak\Desktop\course\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\annak\Desktop\course\DAL\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\annak\Desktop\course\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\annak\Desktop\course\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\annak\Desktop\course\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\annak\Desktop\course\DAL\obj\Debug\DAL.dll
+C:\Users\annak\Desktop\course\DAL\obj\Debug\DAL.pdb
+C:\Users\annak\Desktop\course\DAL\bin\Debug\ru\EntityFramework.SqlServer.resources.dll

@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LibraryDB.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="LibraryDBStoreContainer">
+    <EntitySet Name="UserSet" EntityType="LibraryDB.Store.UserSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BookSet" EntityType="LibraryDB.Store.BookSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="LibraryCardSet" EntityType="LibraryDB.Store.LibraryCardSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserSet_Student" EntityType="LibraryDB.Store.UserSet_Student" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserSet_Employee" EntityType="LibraryDB.Store.UserSet_Employee" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="StudentLibraryCard" Association="LibraryDB.Store.StudentLibraryCard">
+      <End Role="Student" EntitySet="UserSet_Student" />
+      <End Role="LibraryCard" EntitySet="LibraryCardSet" />
+    </AssociationSet>
+    <AssociationSet Name="LibraryCardBook" Association="LibraryDB.Store.LibraryCardBook">
+      <End Role="LibraryCard" EntitySet="LibraryCardSet" />
+      <End Role="Book" EntitySet="BookSet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Student_inherits_User" Association="LibraryDB.Store.FK_Student_inherits_User">
+      <End Role="User" EntitySet="UserSet" />
+      <End Role="Student" EntitySet="UserSet_Student" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employee_inherits_User" Association="LibraryDB.Store.FK_Employee_inherits_User">
+      <End Role="User" EntitySet="UserSet" />
+      <End Role="Employee" EntitySet="UserSet_Employee" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="UserSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Login" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Password" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="FIO" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Admin" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BookSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Author" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PublicationDate" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Genre" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LibraryCard_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LibraryCardSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DateIssue" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserSet_Student">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Group" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Course" Type="int" Nullable="false" />
+    <Property Name="Faculty" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="RegistrationPacket" Type="int" Nullable="false" />
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="LibraryCard_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserSet_Employee">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="BadgeNumber" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Post" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="StudentLibraryCard">
+    <End Role="Student" Type="LibraryDB.Store.UserSet_Student" Multiplicity="*" />
+    <End Role="LibraryCard" Type="LibraryDB.Store.LibraryCardSet" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="LibraryCard">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Student">
+        <PropertyRef Name="LibraryCard_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="LibraryCardBook">
+    <End Role="LibraryCard" Type="LibraryDB.Store.LibraryCardSet" Multiplicity="1" />
+    <End Role="Book" Type="LibraryDB.Store.BookSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LibraryCard">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Book">
+        <PropertyRef Name="LibraryCard_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Student_inherits_User">
+    <End Role="User" Type="LibraryDB.Store.UserSet" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Student" Type="LibraryDB.Store.UserSet_Student" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Student">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employee_inherits_User">
+    <End Role="User" Type="LibraryDB.Store.UserSet" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Employee" Type="LibraryDB.Store.UserSet_Employee" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Employee">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,33 @@
+D:\Конструирование ПО\Lib\Library\BLL\bin\Debug\BLL.dll.config
+D:\Конструирование ПО\Lib\Library\BLL\bin\Debug\BLL.dll
+D:\Конструирование ПО\Lib\Library\BLL\bin\Debug\BLL.pdb
+D:\Конструирование ПО\Lib\Library\BLL\bin\Debug\DAL.dll
+D:\Конструирование ПО\Lib\Library\BLL\bin\Debug\EntityFramework.dll
+D:\Конструирование ПО\Lib\Library\BLL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Конструирование ПО\Lib\Library\BLL\bin\Debug\DAL.pdb
+D:\Конструирование ПО\Lib\Library\BLL\bin\Debug\DAL.dll.config
+D:\Конструирование ПО\Lib\Library\BLL\bin\Debug\EntityFramework.xml
+D:\Конструирование ПО\Lib\Library\BLL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Конструирование ПО\Lib\Library\BLL\bin\Debug\ru\EntityFramework.resources.dll
+D:\Конструирование ПО\Lib\Library\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+D:\Конструирование ПО\Lib\Library\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\Конструирование ПО\Lib\Library\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\Конструирование ПО\Lib\Library\BLL\obj\Debug\BLL.dll
+D:\Конструирование ПО\Lib\Library\BLL\obj\Debug\BLL.pdb
+C:\Users\annak\Desktop\course\Library\BLL\bin\Debug\BLL.dll.config
+C:\Users\annak\Desktop\course\Library\BLL\bin\Debug\BLL.dll
+C:\Users\annak\Desktop\course\Library\BLL\bin\Debug\BLL.pdb
+C:\Users\annak\Desktop\course\Library\BLL\bin\Debug\DAL.dll
+C:\Users\annak\Desktop\course\Library\BLL\bin\Debug\EntityFramework.dll
+C:\Users\annak\Desktop\course\Library\BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\annak\Desktop\course\Library\BLL\bin\Debug\DAL.pdb
+C:\Users\annak\Desktop\course\Library\BLL\bin\Debug\DAL.dll.config
+C:\Users\annak\Desktop\course\Library\BLL\bin\Debug\EntityFramework.xml
+C:\Users\annak\Desktop\course\Library\BLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\annak\Desktop\course\Library\BLL\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\annak\Desktop\course\Library\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+C:\Users\annak\Desktop\course\Library\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\annak\Desktop\course\Library\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\annak\Desktop\course\Library\BLL\obj\Debug\BLL.dll
+C:\Users\annak\Desktop\course\Library\BLL\obj\Debug\BLL.pdb
+C:\Users\annak\Desktop\course\Library\BLL\bin\Debug\ru\EntityFramework.SqlServer.resources.dll

@@ -1,0 +1,13 @@
+D:\Конструирование ПО\Lib\DAL\bin\Release\DAL.dll.config
+D:\Конструирование ПО\Lib\DAL\bin\Release\DAL.dll
+D:\Конструирование ПО\Lib\DAL\bin\Release\DAL.pdb
+D:\Конструирование ПО\Lib\DAL\bin\Release\EntityFramework.dll
+D:\Конструирование ПО\Lib\DAL\bin\Release\EntityFramework.SqlServer.dll
+D:\Конструирование ПО\Lib\DAL\bin\Release\EntityFramework.xml
+D:\Конструирование ПО\Lib\DAL\bin\Release\EntityFramework.SqlServer.xml
+D:\Конструирование ПО\Lib\DAL\bin\Release\ru\EntityFramework.resources.dll
+D:\Конструирование ПО\Lib\DAL\obj\Release\DAL.csprojAssemblyReference.cache
+D:\Конструирование ПО\Lib\DAL\obj\Release\DAL.csproj.CoreCompileInputs.cache
+D:\Конструирование ПО\Lib\DAL\obj\Release\DAL.csproj.CopyComplete
+D:\Конструирование ПО\Lib\DAL\obj\Release\DAL.dll
+D:\Конструирование ПО\Lib\DAL\obj\Release\DAL.pdb

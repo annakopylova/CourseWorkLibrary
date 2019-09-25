@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="LibraryDB" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="LibraryDBContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="UserSet" EntityType="LibraryDB.User" />
+    <EntitySet Name="BookSet" EntityType="LibraryDB.Book" />
+    <EntitySet Name="LibraryCardSet" EntityType="LibraryDB.LibraryCard" />
+    <AssociationSet Name="StudentLibraryCard" Association="LibraryDB.StudentLibraryCard">
+      <End Role="Student" EntitySet="UserSet" />
+      <End Role="LibraryCard" EntitySet="LibraryCardSet" />
+    </AssociationSet>
+    <AssociationSet Name="LibraryCardBook" Association="LibraryDB.LibraryCardBook">
+      <End Role="LibraryCard" EntitySet="LibraryCardSet" />
+      <End Role="Book" EntitySet="BookSet" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Login" Type="String" Nullable="false" />
+    <Property Name="Password" Type="String" Nullable="false" />
+    <Property Name="FIO" Type="String" Nullable="false" />
+    <Property Name="Admin" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Student" BaseType="LibraryDB.User">
+    <Property Name="Group" Type="String" Nullable="false" />
+    <Property Name="Course" Type="Int32" Nullable="false" />
+    <Property Name="Faculty" Type="String" Nullable="false" />
+    <Property Name="RegistrationPacket" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="LibraryCard" Relationship="LibraryDB.StudentLibraryCard" FromRole="Student" ToRole="LibraryCard" />
+  </EntityType>
+  <EntityType Name="Employee" BaseType="LibraryDB.User">
+    <Property Name="BadgeNumber" Type="String" Nullable="false" />
+    <Property Name="Post" Type="String" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Book">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" Nullable="false" />
+    <Property Name="Author" Type="String" Nullable="false" />
+    <Property Name="PublicationDate" Type="String" Nullable="false" />
+    <Property Name="Genre" Type="String" Nullable="false" />
+    <NavigationProperty Name="LibraryCard" Relationship="LibraryDB.LibraryCardBook" FromRole="Book" ToRole="LibraryCard" />
+  </EntityType>
+  <EntityType Name="LibraryCard">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DateIssue" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Student" Relationship="LibraryDB.StudentLibraryCard" FromRole="LibraryCard" ToRole="Student" />
+    <NavigationProperty Name="Book" Relationship="LibraryDB.LibraryCardBook" FromRole="LibraryCard" ToRole="Book" />
+  </EntityType>
+  <Association Name="StudentLibraryCard">
+    <End Type="LibraryDB.Student" Role="Student" Multiplicity="1" />
+    <End Type="LibraryDB.LibraryCard" Role="LibraryCard" Multiplicity="1" />
+  </Association>
+  <Association Name="LibraryCardBook">
+    <End Type="LibraryDB.LibraryCard" Role="LibraryCard" Multiplicity="1" />
+    <End Type="LibraryDB.Book" Role="Book" Multiplicity="*" />
+  </Association>
+</Schema>

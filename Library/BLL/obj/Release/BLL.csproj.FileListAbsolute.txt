@@ -1,0 +1,16 @@
+D:\Конструирование ПО\Lib\Library\BLL\bin\Release\BLL.dll.config
+D:\Конструирование ПО\Lib\Library\BLL\bin\Release\BLL.dll
+D:\Конструирование ПО\Lib\Library\BLL\bin\Release\BLL.pdb
+D:\Конструирование ПО\Lib\Library\BLL\bin\Release\DAL.dll
+D:\Конструирование ПО\Lib\Library\BLL\bin\Release\EntityFramework.dll
+D:\Конструирование ПО\Lib\Library\BLL\bin\Release\EntityFramework.SqlServer.dll
+D:\Конструирование ПО\Lib\Library\BLL\bin\Release\DAL.pdb
+D:\Конструирование ПО\Lib\Library\BLL\bin\Release\DAL.dll.config
+D:\Конструирование ПО\Lib\Library\BLL\bin\Release\EntityFramework.xml
+D:\Конструирование ПО\Lib\Library\BLL\bin\Release\EntityFramework.SqlServer.xml
+D:\Конструирование ПО\Lib\Library\BLL\bin\Release\ru\EntityFramework.resources.dll
+D:\Конструирование ПО\Lib\Library\BLL\obj\Release\BLL.csprojAssemblyReference.cache
+D:\Конструирование ПО\Lib\Library\BLL\obj\Release\BLL.csproj.CoreCompileInputs.cache
+D:\Конструирование ПО\Lib\Library\BLL\obj\Release\BLL.csproj.CopyComplete
+D:\Конструирование ПО\Lib\Library\BLL\obj\Release\BLL.dll
+D:\Конструирование ПО\Lib\Library\BLL\obj\Release\BLL.pdb

@@ -1,0 +1,233 @@
+D:\Конструирование ПО\Lib\Library\bin\Debug\Library.exe.config
+D:\Конструирование ПО\Lib\Library\bin\Debug\Library.exe
+D:\Конструирование ПО\Lib\Library\bin\Debug\Library.pdb
+D:\Конструирование ПО\Lib\Library\obj\Debug\Library.csprojAssemblyReference.cache
+D:\Конструирование ПО\Lib\Library\obj\Debug\App.g.cs
+D:\Конструирование ПО\Lib\Library\obj\Debug\Library_MarkupCompile.cache
+D:\Конструирование ПО\Lib\Library\obj\Debug\Library_MarkupCompile.lref
+D:\Конструирование ПО\Lib\Library\obj\Debug\Library.g.resources
+D:\Конструирование ПО\Lib\Library\obj\Debug\Library.Properties.Resources.resources
+D:\Конструирование ПО\Lib\Library\obj\Debug\Library.csproj.GenerateResource.cache
+D:\Конструирование ПО\Lib\Library\obj\Debug\Library.csproj.CoreCompileInputs.cache
+D:\Конструирование ПО\Lib\Library\obj\Debug\Library.exe
+D:\Конструирование ПО\Lib\Library\obj\Debug\Library.pdb
+D:\Конструирование ПО\Lib\Library\obj\Debug\App.baml
+D:\Конструирование ПО\Lib\Library\bin\Debug\BLL.dll
+D:\Конструирование ПО\Lib\Library\bin\Debug\DAL.dll
+D:\Конструирование ПО\Lib\Library\bin\Debug\EntityFramework.dll
+D:\Конструирование ПО\Lib\Library\bin\Debug\EntityFramework.SqlServer.dll
+D:\Конструирование ПО\Lib\Library\bin\Debug\DAL.pdb
+D:\Конструирование ПО\Lib\Library\bin\Debug\DAL.dll.config
+D:\Конструирование ПО\Lib\Library\bin\Debug\BLL.pdb
+D:\Конструирование ПО\Lib\Library\bin\Debug\BLL.dll.config
+D:\Конструирование ПО\Lib\Library\bin\Debug\EntityFramework.xml
+D:\Конструирование ПО\Lib\Library\bin\Debug\EntityFramework.SqlServer.xml
+D:\Конструирование ПО\Lib\Library\bin\Debug\ru\EntityFramework.resources.dll
+D:\Конструирование ПО\Lib\Library\obj\Debug\Views\LoginScreen.g.cs
+D:\Конструирование ПО\Lib\Library\obj\Debug\Views\LoginScreen.baml
+D:\Конструирование ПО\Lib\Library\obj\Debug\Library.csproj.CopyComplete
+D:\Конструирование ПО\Lib\Library\obj\Debug\Views\RegisterScreen.g.cs
+D:\Конструирование ПО\Lib\Library\obj\Debug\Views\RegisterScreen.baml
+D:\Конструирование ПО\Lib\Library\obj\Debug\Views\AddBookScreen.g.cs
+D:\Конструирование ПО\Lib\Library\obj\Debug\Views\MainWindow.g.cs
+D:\Конструирование ПО\Lib\Library\obj\Debug\Views\AddBookScreen.baml
+D:\Конструирование ПО\Lib\Library\obj\Debug\Views\MainWindow.baml
+D:\Конструирование ПО\Lib\Library\obj\Debug\Views\SelectionWindow.g.cs
+D:\Конструирование ПО\Lib\Library\obj\Debug\Views\StudentRegiserForm.g.cs
+D:\Конструирование ПО\Lib\Library\obj\Debug\Views\SelectionWindow.baml
+D:\Конструирование ПО\Lib\Library\obj\Debug\Views\StudentRegiserForm.baml
+D:\Конструирование ПО\Lib\Library\obj\Debug\Views\EmployeeRegisterForm.g.cs
+D:\Конструирование ПО\Lib\Library\obj\Debug\Views\EmployeeRegisterForm.baml
+D:\Конструирование ПО\Lib\Library\obj\Debug\Views\AdminPanel.g.cs
+D:\Конструирование ПО\Lib\Library\obj\Debug\Views\AdminPanel.baml
+D:\Конструирование ПО\Lib\Library\obj\Debug\Views\EditBookScreen.g.cs
+D:\Конструирование ПО\Lib\Library\obj\Debug\Views\EditBookScreen.baml
+C:\Users\annak\Desktop\course\Library\bin\Debug\Library.exe.config
+C:\Users\annak\Desktop\course\Library\bin\Debug\Library.exe
+C:\Users\annak\Desktop\course\Library\bin\Debug\Library.pdb
+C:\Users\annak\Desktop\course\Library\bin\Debug\BLL.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\DAL.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\EntityFramework.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\DAL.pdb
+C:\Users\annak\Desktop\course\Library\bin\Debug\DAL.dll.config
+C:\Users\annak\Desktop\course\Library\bin\Debug\BLL.pdb
+C:\Users\annak\Desktop\course\Library\bin\Debug\BLL.dll.config
+C:\Users\annak\Desktop\course\Library\bin\Debug\EntityFramework.xml
+C:\Users\annak\Desktop\course\Library\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\annak\Desktop\course\Library\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\annak\Desktop\course\Library\obj\Debug\Library.csprojAssemblyReference.cache
+C:\Users\annak\Desktop\course\Library\obj\Debug\Views\AddBookScreen.g.cs
+C:\Users\annak\Desktop\course\Library\obj\Debug\Views\AdminPanel.g.cs
+C:\Users\annak\Desktop\course\Library\obj\Debug\Views\EditBookScreen.g.cs
+C:\Users\annak\Desktop\course\Library\obj\Debug\Views\EmployeeRegisterForm.g.cs
+C:\Users\annak\Desktop\course\Library\obj\Debug\Views\LoginScreen.g.cs
+C:\Users\annak\Desktop\course\Library\obj\Debug\Views\MainWindow.g.cs
+C:\Users\annak\Desktop\course\Library\obj\Debug\Views\RegisterScreen.g.cs
+C:\Users\annak\Desktop\course\Library\obj\Debug\Views\SelectionWindow.g.cs
+C:\Users\annak\Desktop\course\Library\obj\Debug\Views\StudentRegiserForm.g.cs
+C:\Users\annak\Desktop\course\Library\obj\Debug\App.g.cs
+C:\Users\annak\Desktop\course\Library\obj\Debug\Library_MarkupCompile.cache
+C:\Users\annak\Desktop\course\Library\obj\Debug\Library_MarkupCompile.lref
+C:\Users\annak\Desktop\course\Library\obj\Debug\App.baml
+C:\Users\annak\Desktop\course\Library\obj\Debug\Views\AddBookScreen.baml
+C:\Users\annak\Desktop\course\Library\obj\Debug\Views\AdminPanel.baml
+C:\Users\annak\Desktop\course\Library\obj\Debug\Views\EditBookScreen.baml
+C:\Users\annak\Desktop\course\Library\obj\Debug\Views\EmployeeRegisterForm.baml
+C:\Users\annak\Desktop\course\Library\obj\Debug\Views\LoginScreen.baml
+C:\Users\annak\Desktop\course\Library\obj\Debug\Views\MainWindow.baml
+C:\Users\annak\Desktop\course\Library\obj\Debug\Views\RegisterScreen.baml
+C:\Users\annak\Desktop\course\Library\obj\Debug\Views\SelectionWindow.baml
+C:\Users\annak\Desktop\course\Library\obj\Debug\Views\StudentRegiserForm.baml
+C:\Users\annak\Desktop\course\Library\obj\Debug\Library.g.resources
+C:\Users\annak\Desktop\course\Library\obj\Debug\Library.Properties.Resources.resources
+C:\Users\annak\Desktop\course\Library\obj\Debug\Library.csproj.GenerateResource.cache
+C:\Users\annak\Desktop\course\Library\obj\Debug\Library.csproj.CoreCompileInputs.cache
+C:\Users\annak\Desktop\course\Library\obj\Debug\Library.csproj.CopyComplete
+C:\Users\annak\Desktop\course\Library\obj\Debug\Library.exe
+C:\Users\annak\Desktop\course\Library\obj\Debug\Library.pdb
+C:\Users\annak\Desktop\course\Library\bin\Debug\Microsoft.Win32.Primitives.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\netstandard.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.AppContext.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Collections.Concurrent.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Collections.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Collections.NonGeneric.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Collections.Specialized.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.ComponentModel.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.ComponentModel.EventBasedAsync.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.ComponentModel.Primitives.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.ComponentModel.TypeConverter.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Console.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Data.Common.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Diagnostics.Contracts.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Diagnostics.Debug.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Diagnostics.FileVersionInfo.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Diagnostics.Process.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Diagnostics.StackTrace.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Diagnostics.TextWriterTraceListener.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Diagnostics.Tools.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Diagnostics.TraceSource.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Diagnostics.Tracing.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Drawing.Primitives.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Dynamic.Runtime.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Globalization.Calendars.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Globalization.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Globalization.Extensions.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.IO.Compression.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.IO.Compression.ZipFile.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.IO.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.IO.FileSystem.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.IO.FileSystem.DriveInfo.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.IO.FileSystem.Primitives.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.IO.FileSystem.Watcher.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.IO.IsolatedStorage.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.IO.MemoryMappedFiles.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.IO.Pipes.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.IO.UnmanagedMemoryStream.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Linq.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Linq.Expressions.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Linq.Parallel.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Linq.Queryable.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Net.Http.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Net.NameResolution.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Net.NetworkInformation.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Net.Ping.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Net.Primitives.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Net.Requests.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Net.Security.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Net.Sockets.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Net.WebHeaderCollection.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Net.WebSockets.Client.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Net.WebSockets.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.ObjectModel.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Reflection.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Reflection.Extensions.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Reflection.Primitives.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Resources.Reader.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Resources.ResourceManager.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Resources.Writer.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Runtime.CompilerServices.VisualC.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Runtime.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Runtime.Extensions.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Runtime.Handles.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Runtime.InteropServices.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Runtime.Numerics.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Runtime.Serialization.Formatters.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Runtime.Serialization.Json.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Runtime.Serialization.Primitives.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Runtime.Serialization.Xml.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Security.Claims.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Security.Cryptography.Algorithms.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Security.Cryptography.Csp.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Security.Cryptography.Encoding.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Security.Cryptography.Primitives.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Security.Principal.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Security.SecureString.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Text.Encoding.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Text.Encoding.Extensions.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Text.RegularExpressions.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Threading.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Threading.Overlapped.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Threading.Tasks.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Threading.Tasks.Parallel.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Threading.Thread.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Threading.ThreadPool.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Threading.Timer.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.ValueTuple.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Xml.ReaderWriter.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Xml.XDocument.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Xml.XmlDocument.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Xml.XmlSerializer.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Xml.XPath.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Xml.XPath.XDocument.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\Microsoft.EntityFrameworkCore.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\Remotion.Linq.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Buffers.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Collections.Immutable.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Interactive.Async.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Memory.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\annak\Desktop\course\Library\bin\Debug\Microsoft.EntityFrameworkCore.xml
+C:\Users\annak\Desktop\course\Library\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.xml
+C:\Users\annak\Desktop\course\Library\bin\Debug\Microsoft.EntityFrameworkCore.Design.xml
+C:\Users\annak\Desktop\course\Library\bin\Debug\Microsoft.EntityFrameworkCore.Relational.xml
+C:\Users\annak\Desktop\course\Library\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+C:\Users\annak\Desktop\course\Library\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+C:\Users\annak\Desktop\course\Library\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\Users\annak\Desktop\course\Library\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\annak\Desktop\course\Library\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+C:\Users\annak\Desktop\course\Library\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\annak\Desktop\course\Library\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\annak\Desktop\course\Library\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\annak\Desktop\course\Library\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\annak\Desktop\course\Library\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\annak\Desktop\course\Library\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\annak\Desktop\course\Library\bin\Debug\Remotion.Linq.xml
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Buffers.xml
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Collections.Immutable.xml
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Interactive.Async.xml
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Memory.xml
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\annak\Desktop\course\Library\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\annak\Desktop\course\Library\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\annak\Desktop\course\Library\obj\Debug\Library.exe.config
